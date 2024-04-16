@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.naver.hello.objectwrapper.UserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-16T11:49:39" hostname="com11-135" time="0.613">
+  <properties/>
+  <testcase name="mapperTest()" classname="com.naver.hello.objectwrapper.UserTest" time="0.613"/>
+  <system-out><![CDATA[20:49:38.659 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.naver.hello.objectwrapper.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:49:38.733 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.naver.hello.HelloApplication for test class com.naver.hello.objectwrapper.UserTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.1.10)
+
+2024-04-16T20:49:39.062+09:00  INFO 7484 --- [    Test worker] com.naver.hello.objectwrapper.UserTest   : Starting UserTest using Java 17.0.10 with PID 7484 (started by OWNER in D:\hello)
+2024-04-16T20:49:39.063+09:00  INFO 7484 --- [    Test worker] com.naver.hello.objectwrapper.UserTest   : No active profile set, falling back to 1 default profile: "default"
+2024-04-16T20:49:39.943+09:00  INFO 7484 --- [    Test worker] com.naver.hello.objectwrapper.UserTest   : Started UserTest in 1.08 seconds (process running for 1.89)
+{"name":"kim","age":19}
+kim:19
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
