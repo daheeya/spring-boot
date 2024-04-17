@@ -6,6 +6,24 @@ public class UserDto {  // date를 전송하기 위한 객체 컨트롤러를 �
     private String name;
     private int age;
     private String email;
+    private int idx;
+    private String nick;
+
+    public int getIdx() {
+        return idx;
+    }
+
+    public void setIdx(int idx) {
+        this.idx = idx;
+    }
+
+    public String getNick() {
+        return nick;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
 
     // ObjectWrapper 가 사용하기 때문에 getter setter 을 꼭 만들어주기 (jackson)
     public String getName() {

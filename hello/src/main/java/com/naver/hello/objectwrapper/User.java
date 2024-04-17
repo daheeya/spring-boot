@@ -44,6 +44,6 @@ public class User {
 
         public User build(){  // outer class 생성
             return new User(this);
-        }
+        }  // 본인을 반환해서 연쇄적인 get이 가능하다.
     }
 }
