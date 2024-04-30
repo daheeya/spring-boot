@@ -28,4 +28,13 @@ public class UserInfoDto {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "UserInfoDto{" +
+                "id='" + id + '\'' +
+                ", pw='" + pw + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
