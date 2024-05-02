@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.aop.component.config;
 
 import com.example.aop.aspect.EncodingAop;
@@ -30,3 +31,18 @@ public class AppConfig {
     @Bean
     public IEcoder base64Coder(){return new Base64Coder();}
 }
+=======
+package com.example.aop.component.config;
+
+import com.example.aop.aspect.LoggingAop;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+    @Bean
+    public LoggingAop loggingAop(){
+        return new LoggingAop();
+    }
+}
+>>>>>>> parent of 45ea137 (aop2)
