@@ -46,9 +46,11 @@ public class UserController {
     }
     */
 
+
     // myException 적용
-    @ExceptionHandler(value = {MyException.class, Exception.class})  // {} 로 배열 적용도 가능하다.
+    //@ExceptionHandler(value = {MyException.class, Exception.class})  // {} 로 배열 적용도 가능하다.
     public ResponseEntity handlerException(Exception e){
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(e.getMessage());
     }
+
 }
