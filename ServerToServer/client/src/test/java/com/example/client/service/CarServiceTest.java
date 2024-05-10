@@ -14,6 +14,8 @@ class CarServiceTest {
     @Test
     void uriTest(){
         // carService.getForObject("kim",19);
-        carService.getForEntity("kim", 19);
+        // carService.getForEntity("kim", 19);
+        // carService.getForObj("kim",19);
+        carService.exchangePost("kim",19);
     }
 }
