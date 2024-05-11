@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: naverT
+
+# ???? ??.
+# naver section info end by dahee---------------------------
+naver:
+  uri:
+    search:
+      local: https://openapi.naver.com/v1/search/local.json
+
+    auth: https://nid.naver.com/oauth2.0
+    api: https://openapi.naver.com
+
+  redirect-url: http://localhost:8080/oauth/naver
+
+  id: RZy3HMqRzkqwUuW6PuBq
+  secret: k90UYbhQvj
+
+# naver section info end by dahee---------------------------
+
