@@ -1,6 +1,6 @@
 package com.example.naverT.service.naver;
 
-import com.example.naverT.dto.naver.search.NaverReqDto;
+import com.example.naverT.dto.naver.search.location.NaverReqDto;
 import com.example.naverT.service.naver.search.LocalSearchService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
