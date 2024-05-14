@@ -1,6 +1,6 @@
 package com.example.naverT.service.naver;
 
-import com.example.naverT.dto.naver.search.location.NaverReqDto;
+import com.example.naverT.dto.naver.search.location.LocalReqDto;
 import com.example.naverT.service.naver.search.LocalSearchService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +14,6 @@ class LocalSearchServiceTest {
 
     @Test
     void process(){
-        System.out.println(localSearchService.naverLocalSearch(NaverReqDto.builder().query("국수").build()));
+        System.out.println(localSearchService.naverLocalSearch(LocalReqDto.builder().query("국수").build()));
     }
 }

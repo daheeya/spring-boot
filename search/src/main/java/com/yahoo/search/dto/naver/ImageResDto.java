@@ -1,5 +1,4 @@
-package com.example.naverT.dto.naver.search.image;
-
+package com.yahoo.search.dto.naver;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,22 +8,20 @@ import lombok.NoArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
-@Builder
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
+@Builder
 public class ImageResDto {
-    private int total;
 
     @Builder.Default
-    private List<Item> items = new ArrayList<>();
+    List<Item> items = new ArrayList<>();
 
     @AllArgsConstructor
+    @NoArgsConstructor
     @Data
     @Builder
-    @NoArgsConstructor
-    public static class Item{
-        private String title;
+    public static class Item {
         private String link;
     }
 }
