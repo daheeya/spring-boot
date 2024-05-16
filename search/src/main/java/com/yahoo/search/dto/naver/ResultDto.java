@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class ResultDto {
+    private Long idx;
     private String title;
     private String homepage;
     private String category;

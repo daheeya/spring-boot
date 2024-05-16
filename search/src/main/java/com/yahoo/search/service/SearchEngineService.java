@@ -1,6 +1,7 @@
 package com.yahoo.search.service;
 
 import com.yahoo.search.component.NaverHandler;
+import com.yahoo.search.db.SearchRepository;
 import com.yahoo.search.dto.ResDto;
 import com.yahoo.search.dto.naver.ImageReqDto;
 import com.yahoo.search.dto.naver.LocalReqDto;
@@ -9,11 +10,14 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Slf4j
 @RequiredArgsConstructor
 @Service
 public class SearchEngineService {
     private final NaverHandler naverHandler;
+    private final SearchRepository searchRepository;
 
     public ResDto<ResultDto> naverSearch(String query) {
         var localRes = naverHandler.searchLocal(LocalReqDto.builder().query(query).build());
@@ -37,5 +41,19 @@ public class SearchEngineService {
 
         }
         return null;
+    }
+
+    public ResDto<ResultDto> add(ResultDto resultDto){
+        return ResDto.<ResultDto>builder()
+                .body(searchRepository.save(resultDto))
+                .header(ResDto.Header.builder().code("S_01").build())
+                .build();
+    }
+
+    public ResDto<List<ResultDto>> all(){
+        return ResDto.<List<ResultDto>>builder()
+                .body(searchRepository.findAll())
+                .header(ResDto.Header.builder().code("S_01").build())
+                .build();
     }
 }

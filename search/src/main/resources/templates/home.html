@@ -1,0 +1,40 @@
+<!-- '!' 입력으로 포맷 자동 입력 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/home.js"></script>
+    <title>Search</title>
+</head>
+<body>
+    <div> <!-- 블럭 -->
+        <!-- placeholder : 힌트 텍스트 -->
+        <!-- empty tag 라고 부른다.-->
+        <input id="search" type="text" placeholder="검색어입력"/> 
+        <button id="search-btn" type="button">검색</button>
+    </div>
+    <div>
+        <div>
+            <img id="result-img" src="" alt="img" style="width: 300px; height: 300px; background: lightgrey;"/>
+        </div>
+        <div>
+            <!-- unnumbered list-->
+            <ul>
+                <li id="title"></li>
+                <li id="category"></li>
+                <li id="address"></li>
+                <li id="road-address"></li>
+
+                <li><a id ="homepage" href="">homepage</a></li>
+            </ul>
+
+            <button id="add-btn" type="button">즐겨찾기 추가</button>
+        </div>
+    </div>
+<br/><br/><br/>
+<div>나의 즐겨찾기</div>
+<div id="my-list"></div>
+</body>
+</html>
