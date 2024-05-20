@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>javascript</title>
+    </head>
+    <body>
+        <h1>javascript</h1>
+        <script th:inline="javascript">
+            let username = [[${user.username}]];
+            let age = [[${user.age}]];
+        </script>
+    </body>
+</html>

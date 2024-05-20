@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>variable</title>
+    </head>
+    <body>
+        <h1>SpringEL 표현식</h1>
+        <ul>Object
+            <li>${user.username} = <span th:text="${user.username}"></span></li>
+        </ul>
+
+        <ul>List
+            <li>${users[1].username} = <span th:text="${users[1].username}"></span></li>
+        </ul>
+
+        <ul>Map
+            <li>${userMap['userA'].username} = <span th:text="${userMap['userA'].username}"></span></li>
+        </ul>
+
+        <div th:with="item=${users[0]}">
+            <ul>
+                <li>이름: <span th:text="${item.username}"></span></li>
+                <li>나이: [[${item.age}]]</li>
+            </ul>
+
+        </div>
+
+    </body>
+</html>

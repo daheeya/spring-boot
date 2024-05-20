@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic-Objects</title>
+    </head>
+    <body>
+        <h1> 편의 객체 </h1>
+        <ul>
+            <li>session =<span th:text="${session.sessionData}"></span></li>
+            <li>Spring Bean =<span th:text="${@helloBean.hello('Spring!')}"></span></li>
+        </ul>
+    </body>
+</html>
