@@ -1,0 +1,16 @@
+spring:
+  application:
+  name: bookmgr
+  datasource:
+
+    url: jdbc:mysql://127.0.0.1:3306/book?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 11111111
+  jpa:
+    open-in-view: false  # jpa 영속성이 프론트까지 넘어가버리면 메모리 누수가 발생하므로 view 까지는 영속성이 유지되지 않도록 한다.
+    show-sql: true  # 쿼리를 보여줌
+    hibernate:
+      ddl-auto: update  # create 보다는 update가 맞는 듯 하다.
+    properties:
+      hibernate:
+        format_sql: true
